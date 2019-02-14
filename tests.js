@@ -23,4 +23,7 @@ expect(typeof sayHello).toBe('function')
     it('should return a string "Hello, Jane!"', function () {
         expect(sayHello()).toBe("Hello, Jane!");
     });
+    it('should return a string "Hello, Alex!', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
 });
