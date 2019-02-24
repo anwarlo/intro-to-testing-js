@@ -4,14 +4,5 @@ function helloWorld() {
 }
 
 function sayHello(str) {
-    if (str === "Alex") {
-        return "Hello, Alex!";
-    }
-    else if
-    (str === "Pat") {
-        return "Hello, Pat!"
-    }
-    else {
-        return "Hello, Jane!";
-    }
+   return str === undefined ? "Hello, Jane!" : "Hello, " + str + "!";
 }
