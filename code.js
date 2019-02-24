@@ -10,6 +10,12 @@ function sayHello(str) {
                : "Hello, " + str + "!";
 }
 function isFive(input) {
-    return input === 5 ? true
-        :false;
+    return input === 5 ? true :false;
+}
+function isEven(input) {
+    return Number(input) % 2 === 0 ? true
+        :input === "" ? false
+            : input === isNaN(input) ? false
+            :input !== isFinite(input) ? false
+                :false;
 }
