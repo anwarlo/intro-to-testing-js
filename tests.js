@@ -29,4 +29,10 @@ expect(typeof sayHello).toBe('function')
     it('should return a string "Hello, Pat!"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
+    it('should return a string "Hello, World!"', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return a string "Hello, World!"', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
 });

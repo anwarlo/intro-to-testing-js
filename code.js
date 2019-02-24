@@ -4,5 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(str) {
-   return str === undefined ? "Hello, Jane!" : "Hello, " + str + "!";
+   return str === undefined ? "Hello, Jane!"
+       :str === true ? "Hello, World!"
+           :str === false ? "Hello, World!"
+               : "Hello, " + str + "!";
 }
