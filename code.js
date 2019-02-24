@@ -6,7 +6,12 @@ function helloWorld() {
 function sayHello(str) {
     if (str === "Alex") {
         return "Hello, Alex!";
-    } else {
+    }
+    else if
+    (str === "Pat") {
+        return "Hello, Pat!"
+    }
+    else {
         return "Hello, Jane!";
     }
 }
