@@ -9,3 +9,7 @@ function sayHello(str) {
            :str === false ? "Hello, World!"
                : "Hello, " + str + "!";
 }
+function isFive(input) {
+    return input === 5 ? true
+        :false;
+}
