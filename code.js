@@ -19,3 +19,13 @@ function isEven(input) {
                 :input === Infinity ? false
                     :false;
 }
+function isVowel(input) {
+    if (typeof (input) === "number" || input === undefined || typeof (input) === "boolean"){
+        return false;
+    }
+    return input.toLowerCase() === "a" ||
+        input.toLowerCase() === "e" ||
+        input.toLowerCase() === "i" ||
+        input.toLowerCase() === "o" ||
+        input.toLowerCase() === "u";
+}
