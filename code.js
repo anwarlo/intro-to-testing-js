@@ -13,9 +13,9 @@ function isFive(input) {
     return input === 5 ? true :false;
 }
 function isEven(input) {
-    return Number(input) % 2 === 0 ? true
-        :input === "" ? false
-            : input === isNaN(input) ? false
-            :input !== isFinite(input) ? false
-                :false;
+    return parseInt(input % 2) === 0 ? true
+        :parseInt(input % 2) > 0 ? false
+            :input === "" ? false
+                :input === Infinity ? false
+                    :false;
 }
