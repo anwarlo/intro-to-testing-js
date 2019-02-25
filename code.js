@@ -29,3 +29,9 @@ function isVowel(input) {
         input.toLowerCase() === "o" ||
         input.toLowerCase() === "u";
 }
+function add(x,y) {
+    if (isNaN(parseFloat(x)) || isNaN(parseFloat(x)) === true){
+        return NaN
+    }
+    return parseFloat(x) + parseFloat(y);
+}
